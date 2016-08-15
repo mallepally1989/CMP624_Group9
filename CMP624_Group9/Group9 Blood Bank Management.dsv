@@ -1,0 +1,233 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9378e832-25a8-4b0f-bef7-8dc26173304f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Group9 Blood Bank Management</ID>
+  <Name>Group9 Blood Bank Management</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Group9 Blood Bank Management</DataSourceID>
+  <Schema>
+    <xs:schema id="Group9_x0020_Blood_x0020_Bank_x0020_Management" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Group9_x0020_Blood_x0020_Bank_x0020_Management" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6410b460-8256-4310-851a-ef95a3a5d0de">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Acceptor" msprop:design-time-name="fc3b4214-ddcb-4786-bb6f-614d4281c470" msprop:DbTableName="Acceptor" msprop:FriendlyName="Acceptor" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AcceptorID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ac59ecea-75c3-4e78-ace4-1bf5c81aa22c" msprop:DbColumnName="AcceptorID" msprop:FriendlyName="AcceptorID" type="xs:int" />
+                  <xs:element name="AceptorName" msprop:design-time-name="026f925c-33c5-4dde-aebe-a9ec1a6ab3a3" msprop:DbColumnName="AceptorName" msprop:FriendlyName="AceptorName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AcceptorAge" msprop:design-time-name="056f0c87-e968-4750-9126-27c649b1acb6" msprop:DbColumnName="AcceptorAge" msprop:FriendlyName="AcceptorAge" type="xs:int" minOccurs="0" />
+                  <xs:element name="AcceptorSex" msprop:design-time-name="1e0f3226-34ef-4b20-9167-d72ea50d49b8" msprop:DbColumnName="AcceptorSex" msprop:FriendlyName="AcceptorSex" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AcceptorAdress" msprop:design-time-name="50e62258-2e2f-47b5-87f3-f6bd957abf9c" msprop:DbColumnName="AcceptorAdress" msprop:FriendlyName="AcceptorAdress" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AcceptorPhoneNUmber" msprop:design-time-name="84221fbc-085f-4234-a734-b7de20d65a97" msprop:DbColumnName="AcceptorPhoneNUmber" msprop:FriendlyName="AcceptorPhoneNUmber" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_BloodBankManager" msprop:design-time-name="bcf0c851-87c4-4b6a-85ec-e3eeae09e92c" msprop:DbTableName="BloodBankManager" msprop:FriendlyName="BloodBankManager" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BBManagerID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="55d9ae76-3252-48a5-8ede-c42dfb0288a6" msprop:DbColumnName="BBManagerID" msprop:FriendlyName="BBManagerID" type="xs:int" />
+                  <xs:element name="BBName" msprop:design-time-name="26417e4d-3612-451b-a9fb-a5ee8ceda2ec" msprop:DbColumnName="BBName" msprop:FriendlyName="BBName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EmailID" msprop:design-time-name="6ba85531-dc51-428c-982a-fcf04c077fe9" msprop:DbColumnName="EmailID" msprop:FriendlyName="EmailID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PhoneNumbert" msprop:design-time-name="21748142-d8bd-455c-a372-e63eb2b87e98" msprop:DbColumnName="PhoneNumbert" msprop:FriendlyName="PhoneNumbert" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_BloodGroup" msprop:design-time-name="bf64beba-65c4-4d14-8cb4-51eac512ff0c" msprop:DbTableName="BloodGroup" msprop:FriendlyName="BloodGroup" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BloodGroupID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2dde32d5-e699-4315-996c-b56b839b44f4" msprop:DbColumnName="BloodGroupID" msprop:FriendlyName="BloodGroupID" type="xs:int" />
+                  <xs:element name="BloodType" msprop:design-time-name="ed45a60c-278a-4b4e-98f3-7b528ef72cc6" msprop:DbColumnName="BloodType" msprop:FriendlyName="BloodType" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cost" msprop:design-time-name="83c3c35f-1f4f-4af2-805a-42632a11d59d" msprop:DbColumnName="Cost" msprop:FriendlyName="Cost" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Donor" msprop:design-time-name="bc50369c-6607-4248-8098-d832819edd4b" msprop:DbTableName="Donor" msprop:FriendlyName="Donor" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DonorID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9c78de96-6858-43a8-a0d0-c2ffa0162fa0" msprop:DbColumnName="DonorID" msprop:FriendlyName="DonorID" type="xs:int" />
+                  <xs:element name="DonorName" msprop:design-time-name="509926ea-d7ea-4e42-98c4-16e895e64b80" msprop:DbColumnName="DonorName" msprop:FriendlyName="DonorName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DonorAge" msprop:design-time-name="d3ead90c-047d-45d7-947c-17b240bdff43" msprop:DbColumnName="DonorAge" msprop:FriendlyName="DonorAge" type="xs:int" minOccurs="0" />
+                  <xs:element name="DonorSex" msprop:design-time-name="2e8b94bb-f0c5-47dc-a8c5-b048e0e88231" msprop:DbColumnName="DonorSex" msprop:FriendlyName="DonorSex" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DonorAddress" msprop:design-time-name="81e00e8d-0c2e-46e3-9366-423fc360333d" msprop:DbColumnName="DonorAddress" msprop:FriendlyName="DonorAddress" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DonorPhoneNumber" msprop:design-time-name="9da87866-794f-4817-a9dd-bd916e2dd0f6" msprop:DbColumnName="DonorPhoneNumber" msprop:FriendlyName="DonorPhoneNumber" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactTable_BloodBank" msprop:design-time-name="4893a7f9-16e5-4dd4-82fc-99f88e0ab21b" msprop:DbTableName="FactTable_BloodBank" msprop:FriendlyName="FactTable_BloodBank" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BloodBankID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="3a771443-391a-4f87-8972-609a15527190" msprop:DbColumnName="BloodBankID" msprop:FriendlyName="BloodBankID" type="xs:int" />
+                  <xs:element name="Issues" msprop:design-time-name="0b8369e7-239c-4ee6-bc42-fce8d5771728" msprop:DbColumnName="Issues" msprop:FriendlyName="Issues" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Orders" msprop:design-time-name="78a02c5c-7729-4323-93d0-4af5ffee0496" msprop:DbColumnName="Orders" msprop:FriendlyName="Orders" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BloodGroupID" msprop:design-time-name="6d8fd9c2-cd88-44dc-8f22-7a63b5e400e0" msprop:DbColumnName="BloodGroupID" msprop:FriendlyName="BloodGroupID" type="xs:int" minOccurs="0" />
+                  <xs:element name="DonorID" msprop:design-time-name="0ed7c7e3-6598-4fc9-8e93-4b7384cff6da" msprop:DbColumnName="DonorID" msprop:FriendlyName="DonorID" type="xs:int" minOccurs="0" />
+                  <xs:element name="AcceptorID" msprop:design-time-name="b9ba59b2-e08d-497f-ab3e-715291bdc5c0" msprop:DbColumnName="AcceptorID" msprop:FriendlyName="AcceptorID" type="xs:int" minOccurs="0" />
+                  <xs:element name="BBManagerID" msprop:design-time-name="47070d6b-f849-41a0-894b-2ebbd8b9189e" msprop:DbColumnName="BBManagerID" msprop:FriendlyName="BBManagerID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Inbound" msprop:design-time-name="d0829df6-e94c-49f6-8a3f-3e78f36aa5f1" msprop:DbColumnName="Inbound" msprop:FriendlyName="Inbound" type="xs:int" minOccurs="0" />
+                  <xs:element name="Outbound" msprop:design-time-name="94c0809e-60bb-4f60-811b-7a1a23846211" msprop:DbColumnName="Outbound" msprop:FriendlyName="Outbound" type="xs:int" minOccurs="0" />
+                  <xs:element name="Date" msprop:design-time-name="b3e686bc-05cd-432f-9980-81f974d9b9ff" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Acceptor" />
+          <xs:field xpath="AcceptorID" />
+        </xs:unique>
+        <xs:unique name="dbo_BloodBankManager_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_BloodBankManager" />
+          <xs:field xpath="BBManagerID" />
+        </xs:unique>
+        <xs:unique name="dbo_BloodGroup_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_BloodGroup" />
+          <xs:field xpath="BloodGroupID" />
+        </xs:unique>
+        <xs:unique name="dbo_Donor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Donor" />
+          <xs:field xpath="DonorID" />
+        </xs:unique>
+        <xs:unique name="dbo_FactTable_BloodBank_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactTable_BloodBank" />
+          <xs:field xpath="BloodBankID" />
+        </xs:unique>
+        <xs:keyref name="FK_FactTable_BloodBank_BloodBankManager" refer="dbo_BloodBankManager_Constraint1">
+          <xs:selector xpath=".//dbo_FactTable_BloodBank" />
+          <xs:field xpath="BBManagerID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactTable_BloodBank_Acceptor" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactTable_BloodBank" />
+          <xs:field xpath="AcceptorID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactTable_BloodBank_Donor" refer="dbo_Donor_Constraint1">
+          <xs:selector xpath=".//dbo_FactTable_BloodBank" />
+          <xs:field xpath="DonorID" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactTable_BloodBank_BloodGroup" refer="dbo_BloodGroup_Constraint1">
+          <xs:selector xpath=".//dbo_FactTable_BloodBank" />
+          <xs:field xpath="BloodGroupID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Group9_x0020_Blood_x0020_Bank_x0020_Management xmlns="" />
+  </Schema>
+</DataSourceView>

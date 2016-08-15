@@ -1,0 +1,470 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f5645ab9-620e-439e-adfa-fd69b68a0191" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Group9 Blood Bank Management</ID>
+  <Name>Group9 Blood Bank Management</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="fb36d824-f57c-4849-bbd0-4f7f0ce97be3">
+      <ID>Acceptor</ID>
+      <Name>Acceptor</Name>
+      <DimensionID>Acceptor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="99470455-e652-45f3-9988-b10a8e73070f">
+          <AttributeID>Acceptor ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5bede5d1-7a55-4973-bc0d-dbb556ebd8be">
+      <ID>Blood Bank Manager</ID>
+      <Name>Blood Bank Manager</Name>
+      <DimensionID>Blood Bank Manager</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b1d17f8a-2a5d-4b04-86ca-35ec68bf047a">
+          <AttributeID>BB Manager ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4adeece5-cc52-4e39-b8af-8ae840c1b4ee">
+      <ID>Blood Group</ID>
+      <Name>Blood Group</Name>
+      <DimensionID>Blood Group</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5c368779-6dd1-4a6a-b365-cd566cd1a653">
+          <AttributeID>Blood Group ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7c33d1d2-c28d-4319-8685-af8029c7c586">
+      <ID>Donor</ID>
+      <Name>Donor</Name>
+      <DimensionID>Donor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b984e8d7-9060-4d26-bbfd-3963f2de5cba">
+          <AttributeID>Donor ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ec909ae3-f415-4876-a1e7-08143d536318">
+      <ID>Fact Table Blood Bank</ID>
+      <Name>Fact Table Blood Bank</Name>
+      <DimensionID>Fact Table Blood Bank</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e806cafa-0165-4044-961d-85baabb17c58">
+          <AttributeID>Blood Bank ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="21b0fd38-60a8-4c4d-a707-0fff0db49b79">
+          <AttributeID>Blood Group ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e0f94ad-889d-4704-8a33-3933ca4873ea">
+          <AttributeID>Donor ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aa37a914-6a24-4943-b720-ae287d1d8d72">
+          <AttributeID>Acceptor ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c857eaee-be72-477e-973c-5c559e8ebc14">
+          <AttributeID>BB Manager ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="c1c76805-5308-44cb-81ac-641931ce22f9">
+      <ID>Acceptor</ID>
+      <Name>Acceptor</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="67418553-37e3-4342-a663-71f8fffa5d55">
+          <ID>Acceptor Age</ID>
+          <Name>Acceptor Age</Name>
+          <Source dwd:design-time-name="cf768498-caeb-4605-a53e-278e800b529c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="14533d2c-6886-4f66-bb74-80a8cb4ca5f7">
+              <TableID>dbo_Acceptor</TableID>
+              <ColumnID>AcceptorAge</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7c62165d-6169-4819-88cc-b5bc0041dc00">
+          <ID>Acceptor Count</ID>
+          <Name>Acceptor Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f755d669-b7c4-4bdd-a47b-3d2d8e4d8cc5">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="adf3c746-0d9a-4b0b-85c8-7a1e37ed2c24">
+              <TableID>dbo_Acceptor</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="2289893c-be22-46d9-8cee-4fa443d68d10">
+          <CubeDimensionID>Acceptor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3ac63871-bfc1-4f1e-aa30-f25340dcef0d">
+              <AttributeID>Acceptor ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8b98d174-a2d6-4a11-b5fa-56ea72a04c0b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6025bfcb-fb4c-45b9-8a73-e1b2871e2255">
+                    <TableID>dbo_Acceptor</TableID>
+                    <ColumnID>AcceptorID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="d9feca63-0dd4-4b15-be93-ce2cf85d8ec1">
+      <ID>Blood Bank Manager</ID>
+      <Name>Blood Bank Manager</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ddb7c218-a752-4b89-9a7b-993c1e5f968e">
+          <ID>Blood Bank Manager Count</ID>
+          <Name>Blood Bank Manager Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="afc9a222-c4f6-4dd5-a08a-6e32811cf4d1">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="dd43584d-c841-4e51-9e5a-4c88d94a755e">
+              <TableID>dbo_BloodBankManager</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a893892a-18c6-47ef-bda3-010cbb1443f1">
+          <CubeDimensionID>Blood Bank Manager</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="91294e22-e475-49fb-af80-6a79de1642ce">
+              <AttributeID>BB Manager ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6eb349e0-1bd0-4f0b-bb5f-cbd6ca16de44">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9fc62e0a-098a-425e-a02f-6e1f13d804eb">
+                    <TableID>dbo_BloodBankManager</TableID>
+                    <ColumnID>BBManagerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e1868786-dc08-4430-87d9-95a62e6fea3e">
+      <ID>Blood Group</ID>
+      <Name>Blood Group</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a4731e4c-839f-42f4-9058-225b247487ca">
+          <ID>Cost</ID>
+          <Name>Cost</Name>
+          <Source dwd:design-time-name="989e74d0-5b7a-4b57-b50d-b05cc2cf775a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6243c06c-6eca-4afa-bbf5-b0c87066922b">
+              <TableID>dbo_BloodGroup</TableID>
+              <ColumnID>Cost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4927912e-a147-48d9-a3e1-91453f5d723e">
+          <ID>Blood Group Count</ID>
+          <Name>Blood Group Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="521e2060-07ba-4d60-8820-a1ce6d47e3c6">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c80996d5-f1a5-4154-902a-a21cd2750b7d">
+              <TableID>dbo_BloodGroup</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="e6661e66-8b90-401e-8bd5-0081a314da0b">
+          <CubeDimensionID>Blood Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="922fa56e-b7d6-4673-8312-aabb431d0a55">
+              <AttributeID>Blood Group ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="96abf513-fda9-48ea-a0f7-bbca2ba907c6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e3053216-d771-4d30-acfc-c554b003aa5d">
+                    <TableID>dbo_BloodGroup</TableID>
+                    <ColumnID>BloodGroupID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="9c703301-021a-47db-988c-107b982c3ea1">
+      <ID>Donor</ID>
+      <Name>Donor</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="fe4edd2b-2963-4866-9ff2-d248f80078da">
+          <ID>Donor Age</ID>
+          <Name>Donor Age</Name>
+          <Source dwd:design-time-name="1e3087e7-9910-4202-97bd-8654b7c3994e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6336c330-d509-4479-bbe6-e57a102b27a2">
+              <TableID>dbo_Donor</TableID>
+              <ColumnID>DonorAge</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b01d209a-489d-4d15-88c4-7486cf27c09c">
+          <ID>Donor Count</ID>
+          <Name>Donor Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b2f8694c-c4ec-490c-90d9-af6899379997">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="3673be06-4dec-47db-9e1f-8d381c06ca22">
+              <TableID>dbo_Donor</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="e2f44813-2e37-4434-8f67-cd2803894d52">
+          <CubeDimensionID>Donor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c844d135-4871-4f94-8da0-d65718883324">
+              <AttributeID>Donor ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b8d28d5b-1104-4c59-90a6-cefafcdc1c17">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1609c888-945d-4f83-b286-746b0063bd98">
+                    <TableID>dbo_Donor</TableID>
+                    <ColumnID>DonorID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="1488c5a2-a036-45c4-bcb0-1a5464e82477">
+      <ID>Fact Table Blood Bank</ID>
+      <Name>Fact Table Blood Bank</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="128d9b86-79c8-495d-a010-43f9e567615e">
+          <ID>Inbound</ID>
+          <Name>Inbound</Name>
+          <Source dwd:design-time-name="cf6d88d6-32e1-4531-827e-2613bb9a6254">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f8abf523-e9d1-413d-bfa1-6132835787a0">
+              <TableID>dbo_FactTable_BloodBank</TableID>
+              <ColumnID>Inbound</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="92dba20b-0004-406d-bf4b-b5acf19b6d31">
+          <ID>Outbound</ID>
+          <Name>Outbound</Name>
+          <Source dwd:design-time-name="94d47d5d-82d4-4561-aea7-c06145396621">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0db93204-6f9e-496a-9b0f-d1e429e23193">
+              <TableID>dbo_FactTable_BloodBank</TableID>
+              <ColumnID>Outbound</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6eeaf832-99d0-4849-a1c5-2f1bd290a725">
+          <ID>Fact Table Blood Bank Count</ID>
+          <Name>Fact Table Blood Bank Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d38ef311-067c-4048-af0a-22c8c254f174">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="fe152c88-120f-4fef-8e52-edb1d503f31c">
+              <TableID>dbo_FactTable_BloodBank</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="17358840-3b84-410c-a75b-e05de418d6f6">
+          <CubeDimensionID>Fact Table Blood Bank</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9fec604b-77cb-41a1-9805-140f438b131e">
+              <AttributeID>Blood Bank ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3e73325c-63d3-45ba-a80f-a76e28b7a22e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5906dea0-ca63-485b-a585-a69749fb9caf">
+                    <TableID>dbo_FactTable_BloodBank</TableID>
+                    <ColumnID>BloodBankID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="87e9fa50-fcd8-4d48-8482-f9e8daa6927f">
+          <CubeDimensionID>Blood Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="88d057cc-ec90-4e4d-8336-d40c6e27d40b">
+              <AttributeID>Blood Group ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3c482dfb-7455-409a-8ace-465689881b9a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="41fed8d8-d680-4694-b596-702502b21531">
+                    <TableID>dbo_FactTable_BloodBank</TableID>
+                    <ColumnID>BloodGroupID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9f5148b3-5e03-4573-b849-8fa36372a9c5">
+          <CubeDimensionID>Donor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1cc22e2c-cf6d-41a6-ac3c-e849f0d5c0b0">
+              <AttributeID>Donor ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="59abac06-5009-485d-8ba1-5a9a27d29752">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b4f4cf02-65a6-426a-b291-a3075fdf2069">
+                    <TableID>dbo_FactTable_BloodBank</TableID>
+                    <ColumnID>DonorID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7e5e330b-f60f-4383-b990-35423e662ea1">
+          <CubeDimensionID>Acceptor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="84d96619-866a-409b-a8b7-ccb02ff93981">
+              <AttributeID>Acceptor ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9df4f7a6-1aa7-437e-a689-c0288d6ac75e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f3abf4e8-b37b-473e-a830-9e79f3a619a1">
+                    <TableID>dbo_FactTable_BloodBank</TableID>
+                    <ColumnID>AcceptorID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d0dc5420-f061-4065-ab1d-c3083f2dae22">
+          <CubeDimensionID>Blood Bank Manager</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="98b6af7f-d34a-48d5-8f27-9cf5f1a17cac">
+              <AttributeID>BB Manager ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="66ed4378-0f69-4c6b-a623-bd18aa49e0ac">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7da3d522-bf49-491d-830d-d70e7b6826cb">
+                    <TableID>dbo_FactTable_BloodBank</TableID>
+                    <ColumnID>BBManagerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="0db16233-fbeb-4205-896c-cc770efc85a3">
+    <DataSourceViewID>Group9 Blood Bank Management</DataSourceViewID>
+  </Source>
+</Cube>

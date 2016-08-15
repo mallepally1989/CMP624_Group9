@@ -1,0 +1,105 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8380354f-a350-4b8b-9bca-d991704dcbde" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Group9 Blood Bank Management</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Acceptor</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="79f673cb-14ea-40f9-851f-73ec7a9e337e">
+          <ID>Acceptor</ID>
+          <Name>Acceptor</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="38c4326a-d07a-4614-b992-a5fd4229c026">
+            <DataSourceViewID>Group9 Blood Bank Management</DataSourceViewID>
+            <TableID>dbo_Acceptor</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Blood Bank Manager</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d4625f4e-d65f-4a9e-a3c5-6d4eb171e3ab">
+          <ID>Blood Bank Manager</ID>
+          <Name>Blood Bank Manager</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e1fe4c06-135e-4958-b2c9-fa18a839eeff">
+            <DataSourceViewID>Group9 Blood Bank Management</DataSourceViewID>
+            <TableID>dbo_BloodBankManager</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Blood Group</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6f1a0c56-3198-4fec-9de8-3ff581bf4eec">
+          <ID>Blood Group</ID>
+          <Name>Blood Group</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6dba3f35-968c-4f5e-8145-1d70bb9c9827">
+            <DataSourceViewID>Group9 Blood Bank Management</DataSourceViewID>
+            <TableID>dbo_BloodGroup</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Donor</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f67a75cb-f3e0-4981-b128-0c5cfb236327">
+          <ID>Donor</ID>
+          <Name>Donor</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1780f9ed-23d3-434c-b1c2-c64e6e7cd3b8">
+            <DataSourceViewID>Group9 Blood Bank Management</DataSourceViewID>
+            <TableID>dbo_Donor</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Table Blood Bank</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="696f075a-540f-4128-bbb2-49909cbd8a63">
+          <ID>Fact Table Blood Bank</ID>
+          <Name>Fact Table Blood Bank</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="21772cc2-4daf-4f18-a16d-66eb10959491">
+            <DataSourceViewID>Group9 Blood Bank Management</DataSourceViewID>
+            <TableID>dbo_FactTable_BloodBank</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

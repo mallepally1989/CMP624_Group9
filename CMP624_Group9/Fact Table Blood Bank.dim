@@ -1,0 +1,160 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d531b17b-9c75-4d4d-8c89-eda98a4a91c8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Table Blood Bank</ID>
+  <Name>Fact Table Blood Bank</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5dd798e6-ebd2-46f6-80fe-9ee38c493715">
+    <DataSourceViewID>Group9 Blood Bank Management</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="2f6e438a-a83e-43d8-9378-9dd07a42b3e1">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="601ee928-1104-45b8-af8b-20b40164bda6">
+      <ID>Blood Bank ID</ID>
+      <Name>Blood Bank ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="02c04027-edfc-4325-ba09-93fead1117f2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="42d6a3da-4228-483c-8954-25f24d79440a">
+            <TableID>dbo_FactTable_BloodBank</TableID>
+            <ColumnID>BloodBankID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4e9a6fab-74a9-4097-8e33-48844574d53d">
+          <AttributeID>Blood Group ID</AttributeID>
+          <Name>Blood Group ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ace2c28-232f-45f0-9d50-6534eb4977d8">
+          <AttributeID>Donor ID</AttributeID>
+          <Name>Donor ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a49025ed-a89d-4a4d-be52-b8fcdbbe9c18">
+          <AttributeID>Acceptor ID</AttributeID>
+          <Name>Acceptor ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2cb71a4-1a38-4108-876f-8154dc3e2760">
+          <AttributeID>BB Manager ID</AttributeID>
+          <Name>BB Manager ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="85a0ca33-882c-43e7-afc1-766e0ea288bf">
+      <ID>Blood Group ID</ID>
+      <Name>Blood Group ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eac42b41-c6c4-464e-ba03-cd1e4eec3665">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d813791-487d-4cfc-8392-4d41f73a2f21">
+            <TableID>dbo_FactTable_BloodBank</TableID>
+            <ColumnID>BloodGroupID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="26c394dc-acf2-4a2f-9949-473a025e926c">
+      <ID>Donor ID</ID>
+      <Name>Donor ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="90d61d90-8b0e-4f99-8532-57970e265e84">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c549bbab-4cb8-40e1-9df1-d7a9b114bbc6">
+            <TableID>dbo_FactTable_BloodBank</TableID>
+            <ColumnID>DonorID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="88d2e4f5-6df6-4fa0-bbf1-e9c4f5e9116f">
+      <ID>Acceptor ID</ID>
+      <Name>Acceptor ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="03108e3a-b67e-4409-94c6-e0b05c902163">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5896cec9-24b2-4f20-b948-bcada97a4691">
+            <TableID>dbo_FactTable_BloodBank</TableID>
+            <ColumnID>AcceptorID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="98420d23-f83e-461e-9ea5-c0ea816c39d1">
+      <ID>BB Manager ID</ID>
+      <Name>BB Manager ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7de436f9-3bf5-482b-872f-6785abf5e1af">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="213df86b-a447-4232-aad2-bde0833aaf84">
+            <TableID>dbo_FactTable_BloodBank</TableID>
+            <ColumnID>BBManagerID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
